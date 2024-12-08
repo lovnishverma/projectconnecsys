@@ -1,0 +1,16 @@
+# Django and related libraries
+django>=3.2,<5.0           # Adjust version as per your project needs
+django-crispy-forms>=1.14.0
+
+# OpenCV for image processing
+opencv-python>=4.5.5
+opencv-contrib-python>=4.5.5
+
+# QR code generation
+qrcode[pil]>=7.3
+
+# Excel file handling
+openpyxl>=3.0.10
+
+# Pillow for image processing (required by qrcode and OpenCV)
+Pillow>=9.0.0

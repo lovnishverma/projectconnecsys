@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Excel File - NIELIT Certificates Portal</title>
+    <style>
+        /* Reset and global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: #ffffff;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        header {
+            background-color: #003b8b;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #ffffff;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 120px);
+            flex-direction: column;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            padding: 20px;
+            color: #333333;
+            text-align: center;
+        }
+        .card h2 {
+            margin-bottom: 20px;
+            color: #003b8b;
+        }
+        .card form {
+            margin-top: 20px;
+        }
+        .card form button {
+            background-color: #0072ff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .card form button:hover {
+            background-color: #005bb5;
+            transform: scale(1.05);
+        }
+        .links {
+            margin-top: 20px;
+        }
+        .links a {
+            color: #0072ff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .links a:hover {
+            color: #005bb5;
+        }
+        footer {
+            background-color: #003b8b;
+            padding: 10px;
+            text-align: center;
+            color: #ffffff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NIELIT Certificates Generation Portal</h1>
+    </header>
+    <main>
+        <div class="card">
+            <h2>Upload Excel File</h2>
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Upload</button>
+            </form>
+            <div class="links">
+                <a href="/">Go to Homepage</a>
+                <a href="/admin">Go to Admin Panel</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        © 2024 NIELIT. All Rights Reserved.
+    </footer>
+</body>
+</html>

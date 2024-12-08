@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIELIT Certificates Generation Portal</title>
+    <style>
+        /* Reset and global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: #ffffff;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        header {
+            background-color: #003b8b;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #ffffff;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 120px);
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            padding: 20px;
+            color: #333333;
+            text-align: center;
+        }
+        .card a {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            color: #ffffff;
+            background: #0072ff;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .card a:hover {
+            background: #005bb5;
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #003b8b;
+            padding: 10px;
+            text-align: center;
+            color: #ffffff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NIELIT Certificates Generation Portal</h1>
+    </header>
+    <main>
+        <div class="card">
+            <h2>Welcome!</h2>
+            <p>Select an option to proceed:</p>
+            <a href="/admin">Admin Panel</a>
+            <a href="/import-certificates">Import Certificates</a>
+        </div>
+    </main>
+    <footer>
+        © 2024 NIELIT. All Rights Reserved.
+    </footer>
+</body>
+</html>
